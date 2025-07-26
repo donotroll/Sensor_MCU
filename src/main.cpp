@@ -1,8 +1,6 @@
 #include <AsyncUdp.h>
 #include "common.h"
-#include "sensor.cpp"
-
-
+#include "Sensor/sensor.h"
 
 
 const char* ssid = "WIFI_NAME";
@@ -11,67 +9,95 @@ const int relay = 23;
 AsyncUDP udp;
 
 Adafruit_INA219 ina219(0x44);
-vTaskSensor taskSensor;
-
+Adafruit_INA219 ina219_b(0x40);
+vTaskSensor* taskSensor1;
+vTaskSensor* taskSensor2;
 //UDP
 char *rx_buffer[RX_BUFFER_LEN];
 char *tx_buffer[TX_BUFFER_LEN];
-int T_send = 1000;
 
+
+int T_send = 1000;
+//buffer 
+float data_buffer[SEN_BUFFER_LEN] = {0};
+QueueHandle_t tx_queue;
+QueueHandle_t buffer_queue;
 
 void setup(void) 
 {
+
+  //begin serial
   Serial.begin(115200);
   while (!Serial) {
       // will pause Zero, Leonardo, etc until serial console opens
       delay(1);
   }
-    
   Serial.println("Hello!");
-  
-  // Initialize the INA219.
-  // By default the initialization will use the largest range (32V, 2A).  However
-  // you can call a setCalibration function to change this range (see comments).
-  if (! ina219.begin()) {
-    Serial.println("Failed to find INA219 chip");
-    while (1) { delay(10); }
+
+  //set up buffer queue, partition bufs
+  buffer_queue = xQueueCreate(BUFFER_LEN * 3, sizeof (data *));
+  for (int i = 0; i < BUFFER_LEN * 2 ; ++i) {
+    data *d = new data;
+    d->dataPoints = &data_buffer[i * SEN_LEN];
+    d->len = SEN_LEN;
+
+    printData(d, -1);
+    //Serial.println((unsigned int) d);
+    if (xQueueSend(buffer_queue, (void *)&d, portMAX_DELAY) == pdFALSE) {
+      Serial.println("Failed to send data to buffer queue");
+    }
   }
-  // To use a slightly lower 32V, 1A range (higher precision on amps):
-  //ina219.setCalibration_32V_1A();
-  // Or to use a lower 16V, 400mA range (higher precision on volts and amps):
-  //ina219.setCalibration_16V_400mA();
 
-  Serial.println("Measuring voltage and current with INA219 ...");
-
-  buffer_queue = xQueueCreate(BUFFER_LEN, sizeof (data));
-  tx_queue = xQueueCreate(BUFFER_LEN, sizeof (data));
+ 
+  //set up UDP queue
+  tx_queue = xQueueCreate(BUFFER_LEN, sizeof (UDPpacket *));
 
 
-  taskSensor = vTaskSensor(ina219, DEFAULT_T_SAMPLE, buffer_queue);
+  taskSensor1 = new vTaskSensor(ina219, 0, buffer_queue, tx_queue);
+  taskSensor2 = new vTaskSensor(ina219_b, 1, buffer_queue, tx_queue);
+
   BaseType_t xReturned;
-  
   if (xReturned = xTaskCreate(
     vTaskSensorRead,
     "sensor1",
     STACK_SIZE,
-    (void *) &taskSensor,
+    (void *) taskSensor1,
     tskIDLE_PRIORITY,
-    &taskSensor.xSensorRead
+    &taskSensor1->xSensorRead
   ) == pdFAIL) {
-    Serial.println("could not create sensor task");
+    Serial.println("could not create sensor task 1");
+  }
+
+  if (xReturned = xTaskCreate(
+    vTaskSensorRead,
+    "sensor2",
+    STACK_SIZE,
+    (void *) taskSensor2,
+    tskIDLE_PRIORITY,
+    &taskSensor2->xSensorRead
+  ) == pdFAIL) {
+    Serial.println("could not create sensor task 2");
   }
 
 }
 
-void loop(void) 
-{
-  data ptr;
-  if ( xQueueReceive(tx_queue, &ptr, pdMS_TO_TICKS(T_send / 100)) == pdFALSE) {
-    Serial.print("empty tx buffer! time: ");
+void loop(void) {
+
+ for (;;) {
+  UDPpacket *packet = new UDPpacket;
+  if ( xQueueReceive(tx_queue, packet, pdMS_TO_TICKS(DEFAULT_T_SAMPLE * SEN_LEN * 3)) == pdFALSE) {
+    Serial.print("tx buffer remains empty? time: ");
     Serial.println(millis());
+    continue;
+  }
+  Serial.println("Received packet:");
+  printPacket(*packet);
+
+  for (int i = 0; i < packet->sz; ++i) {
+    xQueueSend(buffer_queue, packet->data[i], portMAX_DELAY);
   }
 
 
-
-  vTaskDelay(pdMS_TO_TICKS(T_send));
+  delete packet;
+ }
 }
