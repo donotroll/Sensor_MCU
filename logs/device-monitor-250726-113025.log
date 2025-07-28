@@ -1,0 +1,341 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sending packet: id = 0===== Received packet: =====
+920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [90.00, 618.00, 2.00, 443.00, 647.00, 23.00, 505.00, 936.00, 860.00, 85.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [436.00, 694.00, 548.00, 683.00, 371.00, 698.00, 932.00, 337.00, 284.00, 556.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [528.00, 290.00, 460.00, 512.00, 979.00, 995.00, 437.00, 894.00, 737.00, 117.00]
+Sending packet: id = 1===== Received packet: =====
+966
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [622.00, 119.00, 686.00, 182.00, 275.00, 622.00, 978.00, 919.00, 133.00, 839.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [178.00, 119.00, 796.00, 759.00, 795.00, 790.00, 219.00, 452.00, 653.00, 832.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [39.00, 653.00, 77.00, 256.00, 757.00, 52.00, 871.00, 858.00, 20.00, 891.00]
+Sending packet: id = 0===== Received packet: =====
+1920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: 0
+    len: 10, curr: 10
+    dataPoints: [201.00, 688.00, 101.00, 269.00, 739.00, 124.00, 979.00, 222.00, 790.00, 140.00]
+  data[1]:
+    type: 1
+    len: 10, curr: 10
+    dataPoints: [790.00, 140.00, 167.00, 628.00, 599.00, 519.00, 864.00, 114.00, 246.00, 585.00]
+  data[2]:
+    type: 2
+    len: 10, curr: 10
+    dataPoints: [246.00, 585.00, 349.00, 931.00, 469.00, 450.00, 471.00, 396.00, 543.00, 625.00]
+Sending packet: id = 0===== Received packet: =====
+1965
+=== UDPpacket ===
+id: 584480434
+sz: 1076680623, curr: -1120353599
+read_flag: 0b010
+T_sample: 1576770200 ms
+  data[0]:
+    type: Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d2005  PS      : 0x00060830  A0      : 0x800d2146  A1      : 0x3ffb2230  
+  #0  0x400d2005 in printData(data*, int) at src/Sensor/sensor.cpp:19
+
+A2      : 0x9183d5c7  A3      : 0x00000000  A4      : 0x3ffc2e24  A5      : 0x000041c0  
+A6      : 0x00060820  A7      : 0x00000001  A8      : 0x800d2003  A9      : 0x3ffb2210  
+A10     : 0x0000000a  A11     : 0x3f400714  A12     : 0x0000000a  A13     : 0x00000000  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x9183d5cf  LBEG    : 0x40088f3d  LEND    : 0x40088f4d  LCOUNT  : 0xfffffffd  
+
+
+Backtrace: 0x400d2002:0x3ffb2230 0x400d2143:0x3ffb2250 0x400d2641:0x3ffb2270 0x400d56b5:0x3ffb2290
+  #0  0x400d2002 in printData(data*, int) at src/Sensor/sensor.cpp:19
+  #1  0x400d2143 in printPacket(UDPpacket&) at src/Sensor/sensor.cpp:46 (discriminator 2)
+  #2  0x400d2641 in loop() at src/main.cpp:96
+  #3  0x400d56b5 in loopTask(void*) at C:/Users/IamDu/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:50
+
+
+
+
+
+ELF file SHA256: 0fd78927b3ace4f5
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sending packet: id = 0===== Received packet: =====
+920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [796.00, 845.00, 97.00, 963.00, 958.00, 971.00, 732.00, 173.00, 230.00, 528.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [894.00, 230.00, 359.00, 162.00, 796.00, 773.00, 54.00, 35.00, 486.00, 909.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [137.00, 776.00, 766.00, 58.00, 379.00, 848.00, 473.00, 947.00, 817.00, 340.00]
+Sending packet: id = 1===== Received packet: =====
+966
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [76.00, 518.00, 212.00, 802.00, 886.00, 180.00, 331.00, 432.00, 692.00, 981.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [84.00, 227.00, 383.00, 513.00, 136.00, 272.00, 788.00, 371.00, 594.00, 146.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [543.00, 908.00, 715.00, 576.00, 887.00, 447.00, 867.00, 592.00, 347.00, 85.00]
+Sending packet: id = 0===== Received packet: =====
+1920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: 0
+    len: 10, curr: 10
+    dataPoints: [446.00, 940.00, 35.00, 39.00, 352.00, 974.00, 920.00, 154.00, 904.00, 163.00]
+  data[1]:
+    type: 1
+    len: 10, curr: 10
+    dataPoints: [904.00, 163.00, 427.00, 43.00, 705.00, 654.00, 509.00, 904.00, 759.00, 485.00]
+  data[2]:
+    type: 2
+    len: 10, curr: 10
+    dataPoints: [759.00, 485.00, 52.00, 910.00, 873.00, 132.00, 678.00, 972.00, 624.00, 184.00]
+Sending packet: id = 0===== Received packet: =====
+1965
+=== UDPpacket ===
+id: 584480434
+sz: 1076680623, curr: -1120353599
+read_flag: 0b010
+T_sample: 1576770200 ms
+  data[0]:
+    type: Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d2005  PS      : 0x00060830  A0      : 0x800d2146  A1      : 0x3ffb2230  
+  #0  0x400d2005 in printData(data*, int) at src/Sensor/sensor.cpp:19
+
+A2      : 0x9183d5c7  A3      : 0x00000000  A4      : 0x3ffc2e24  A5      : 0x000044c0  
+A6      : 0x00060820  A7      : 0x00000001  A8      : 0x800d2003  A9      : 0x3ffb2210  
+A10     : 0x0000000a  A11     : 0x3f400714  A12     : 0x0000000a  A13     : 0x00000000  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x9183d5cf  LBEG    : 0x40088f3d  LEND    : 0x40088f4d  LCOUNT  : 0xfffffffd  
+
+
+Backtrace: 0x400d2002:0x3ffb2230 0x400d2143:0x3ffb2250 0x400d2641:0x3ffb2270 0x400d56b5:0x3ffb2290
+  #0  0x400d2002 in printData(data*, int) at src/Sensor/sensor.cpp:19
+  #1  0x400d2143 in printPacket(UDPpacket&) at src/Sensor/sensor.cpp:46 (discriminator 2)
+  #2  0x400d2641 in loop() at src/main.cpp:96
+  #3  0x400d56b5 in loopTask(void*) at C:/Users/IamDu/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:50
+
+
+
+
+
+ELF file SHA256: 0fd78927b3ace4f5
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sending packet: id = 0===== Received packet: =====
+920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [336.00, 489.00, 624.00, 643.00, 589.00, 554.00, 643.00, 138.00, 385.00, 981.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [703.00, 948.00, 932.00, 120.00, 101.00, 348.00, 74.00, 954.00, 746.00, 777.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [942.00, 133.00, 661.00, 102.00, 521.00, 576.00, 562.00, 786.00, 920.00, 119.00]
+Sending packet: id = 1===== Received packet: =====
+966
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [410.00, 461.00, 720.00, 45.00, 83.00, 872.00, 602.00, 340.00, 542.00, 745.00]
+  data[1]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [92.00, 838.00, 449.00, 946.00, 999.00, 686.00, 980.00, 719.00, 929.00, 522.00]
+  data[2]:
+    type: -1
+    len: 10, curr: 10
+    dataPoints: [342.00, 837.00, 113.00, 798.00, 146.00, 348.00, 974.00, 93.00, 751.00, 309.00]
+Sending packet: id = 0===== Received packet: =====
+1920
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 100 ms
+  data[0]:
+    type: 0
+    len: 10, curr: 10
+    dataPoints: [17.00, 331.00, 115.00, 386.00, 361.00, 348.00, 885.00, 286.00, 302.00, 215.00]
+  data[1]:
+    type: 1
+    len: 10, curr: 10
+    dataPoints: [302.00, 215.00, 708.00, 673.00, 256.00, 999.00, 329.00, 637.00, 415.00, 249.00]
+  data[2]:
+    type: 2
+    len: 10, curr: 10
+    dataPoints: [415.00, 249.00, 893.00, 361.00, 998.00, 6.00, 434.00, 807.00, 918.00, 840.00]
+Sending packet: id = 0===== Received packet: =====
+1965
+=== UDPpacket ===
+id: 584480434
+sz: 1076680623, curr: -1120353599
+read_flag: 0b010
+T_sample: 1576770200 ms
+  data[0]:
+    type: Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d2005  PS      : 0x00060830  A0      : 0x800d2146  A1      : 0x3ffb2230  
+  #0  0x400d2005 in printData(data*, int) at src/Sensor/sensor.cpp:19
+
+A2      : 0x9183d5c7  A3      : 0x00000000  A4      : 0x3ffc2e24  A5      : 0x00004900  
+A6      : 0x00060820  A7      : 0x00000001  A8      : 0x800d2003  A9      : 0x3ffb2210  
+A10     : 0x0000000a  A11     : 0x3f400714  A12     : 0x0000000a  A13     : 0x00000000  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x9183d5cf  LBEG    : 0x40088f3d  LEND    : 0x40088f4d  LCOUNT  : 0xfffffffd  
+
+
+Backtrace: 0x400d2002:0x3ffb2230 0x400d2143:0x3ffb2250 0x400d2641:0x3ffb2270 0x400d56b5:0x3ffb2290
+  #0  0x400d2002 in printData(data*, int) at src/Sensor/sensor.cpp:19
+  #1  0x400d2143 in printPacket(UDPpacket&) at src/Sensor/sensor.cpp:46 (discriminator 2)
+  #2  0x400d2641 in loop() at src/main.cpp:96
+  #3  0x400d56b5 in loopTask(void*) at C:/Users/IamDu/.platformio/packages/framework-arduinoespressif32/cores/esp32/main.cpp:50
+
+
+
+
+
+ELF file SHA256: 0fd78927b3ace4f5
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1

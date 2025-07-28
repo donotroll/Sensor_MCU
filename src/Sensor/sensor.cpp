@@ -61,7 +61,7 @@ vTaskSensor::vTaskSensor(Adafruit_INA219 ina219, int id, QueueHandle_t in, Queue
       Serial.println("uninitialised buffer!");
     }
     //Serial.println((unsigned int) read_to[i]);
-    printData(read_to[i], i);
+    //printData(read_to[i], i);
   }
 
 
@@ -69,7 +69,7 @@ vTaskSensor::vTaskSensor(Adafruit_INA219 ina219, int id, QueueHandle_t in, Queue
   this->packet_curr= new UDPpacket;
   this->packet_next= new UDPpacket;
   this->packet_curr->id = id;
-  printPacket(*this->packet_curr);
+  //printPacket(*this->packet_curr);
 
 
   // Initialize the INA219.
@@ -91,7 +91,6 @@ vTaskSensor::vTaskSensor(Adafruit_INA219 ina219, int id, QueueHandle_t in, Queue
 
 //maybe add inside class?
 float ReadFrom(Adafruit_INA219 ina219, int type) {
-  return 1;
   switch (type)
   {
     case CURRENT:
@@ -123,10 +122,11 @@ void vTaskSensorRead(void *parameters) {
   //printPacket(*packet);
 
   //modify next packet here?
-    Serial.print("Sensor ID: ");
+  
+  /*Serial.print("Sensor ID: ");
    Serial.println(sensor->id);
    Serial.print("Time: ");
-   Serial.println(millis());
+   Serial.println(millis());*/
    
    //ordered by current, voltage, power
    for (int i = 0; i < 3; ++i) {
@@ -145,11 +145,17 @@ void vTaskSensorRead(void *parameters) {
     }
 
     //point again, then read
+    assert(sensor->read_to[i] != nullptr);
     data *d = sensor->read_to[i];
-    d->dataPoints[d->curr] =1;
+
+    assert(d->dataPoints != nullptr);
+    //check end condition only!
+    assert(d->curr != d->len);
+
+    d->dataPoints[d->curr] = random(1,1000);
     d->curr++;
 
-    //add to packet
+    //add to packet, dangerous!
     if (d->curr == d->len) {
       packet->data[packet->curr] = d;
       packet->curr++;
@@ -158,19 +164,25 @@ void vTaskSensorRead(void *parameters) {
    }
 
    //send packet to UDP queue, set new packet config
-   if (packet->sz == packet->curr) {
-   if ( xQueueSend(sensor->out_buffer, packet, DEFAULT_TIMEOUT) == pdFALSE) { //WARNING DO NOT ACCESS OLD PACKET!!
-    Serial.println("something is blocking output buffer queue");
-   }
+   if (packet->curr >= packet->sz) {
+
+    //Serial.print("Sending packet: id = ");
+    //Serial.print(packet->id);
+    if ( xQueueSend(sensor->out_buffer, packet, DEFAULT_TIMEOUT) == pdFALSE) { //copy packet, not the pointer of packet!
+      Serial.println("something is blocking output buffer queue");
+    }
+  
     sensor->packet_curr = sensor->packet_next;
 
     //TODO: CONFIG
 
-    //copy param
+    //copy params
     sensor->packet_next = new UDPpacket;
     sensor->packet_next->id = sensor->packet_curr->id;
     sensor->packet_next->read_flag = sensor->packet_curr->read_flag;
     sensor->packet_next->sz = sensor->packet_curr->sz;
+    sensor->packet_next->T_sample = sensor->packet_curr->T_sample;
+    sensor->packet_next->curr = 0;
    }
 
 /*

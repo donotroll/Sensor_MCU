@@ -1,0 +1,325 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 62
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 85
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 1
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 1020
+Received packet:Sensor ID: 1
+Time: 1021
+
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449720
+    len: 1073449688, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449816
+    len: 1073449784, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 2020
+Sensor ID: Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+1
+Time: 2032
+
+assert failed: void vTaskSensorRead(void*) sensor.cpp:151 (d->dataPoints != nullptr)
+
+
+Backtrace: 0x400deba5:0x3ffb2350 0x400dec05:0x3ffb2380 0x400df047:0x3ffb23f0 0x40083a41:0x3ffb2440 0x40084a24:0x3ffb2460 0x4008399d:0x3ffb2520 0x4008ab61:0x3ffb2540 0x4008fd0d:0x3ffb2560 0x400d22f5:0x3ffb2690
+  #0  0x400deba5 in esp_panic_handler_reconfigure_wdts at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:178
+  #1  0x400dec05 in esp_panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:227
+  #2  0x400df047 in panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:188
+  #3  0x40083a41 in xt_unhandled_exception at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:219
+  #4  0x40084a24 in _xt_user_exc at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/xtensa_vectors.S:703
+  #5  0x4008399d in panic_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:408
+  #6  0x4008ab61 in esp_system_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/esp_system.c:137
+  #7  0x4008fd0d in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:85
+  #8  0x400d22f5 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:151 (discriminator 1)
+
+
+
+
+
+ELF file SHA256: 9b4ddab10c38688e
+
+
+assert failed: void vTaskSensorRead(void*) sensor.cpp:151 (d->dataPoints != nullptr)
+
+
+Backtrace: 0x4008adc3:0x3ffb2190 0x400df047:0x00000000 |<-CORRUPTED
+  #0  0x4008adc3 in _xt_context_save at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/xtensa_context.S:194
+  #1  0x400df047 in panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:188
+
+
+
+
+
+ELF file SHA256: 9b4ddab10c38688e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 62
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 85
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 1
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 1020
+Received packet:Sensor ID: 1
+Time: 1021
+
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449720
+    len: 1073449688, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449816
+    len: 1073449784, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 2020
+Sensor ID: Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+1
+Time: 2032
+
+assert failed: void vTaskSensorRead(void*) sensor.cpp:151 (d->dataPoints != nullptr)
+
+
+Backtrace: 0x400deba5:0x3ffb2350 0x400dec05:0x3ffb2380 0x400df047:0x3ffb23f0 0x40083a41:0x3ffb2440 0x40084a24:0x3ffb2460 0x4008399d:0x3ffb2520 0x4008ab61:0x3ffb2540 0x4008fd0d:0x3ffb2560 0x400d22f5:0x3ffb2690
+  #0  0x400deba5 in esp_panic_handler_reconfigure_wdts at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:178
+  #1  0x400dec05 in esp_panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:227
+  #2  0x400df047 in panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:188
+  #3  0x40083a41 in xt_unhandled_exception at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:219
+  #4  0x40084a24 in _xt_user_exc at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/xtensa_vectors.S:703
+  #5  0x4008399d in panic_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:408
+  #6  0x4008ab61 in esp_system_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/esp_system.c:137
+  #7  0x4008fd0d in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:85
+  #8  0x400d22f5 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:151 (discriminator 1)
+
+
+
+
+
+ELF file SHA256: 9b4ddab10c38688e
+
+
+assert failed: void vTaskSensorRead(void*) sensor.cpp:151 (d->dataPoints != nullptr)
+
+
+Backtrace: 0x4008adc3:0x3ffb2190 0x400df047:0x00000000 |<-CORRUPTED
+  #0  0x4008adc3 in _xt_context_save at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/xtensa_context.S:194
+  #1  0x400df047 in panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:188
+
+
+
+
+
+ELF file SHA256: 9b4ddab10c38688e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 62
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 85
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 0, curr: 1
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 1020
+Received packet:Sensor ID: 1
+Time: 1021
+
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449720
+    len: 1073449688, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 1073449816
+    len: 1073449784, curr: 0
+    dataPoints: []
+  data[1] = nullptr
+  data[2] = nullptr

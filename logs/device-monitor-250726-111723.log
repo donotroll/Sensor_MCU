@@ -1,0 +1,172 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Sending packet: id = 1Received packet:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[2]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[2]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nul
+assert failed: void vTaskSensorRead(void*) sensor.cpp:152 (d->dataPoints != nullptr)
+
+
+Backtrace: 0x400dea6e:0x3ffb2330 0x400deaec:0x3ffb2370 0x400dec12:0x3ffb2390 0x400df01f:0x3ffb2400 0x40083a41:0x3ffb2450 0x40084a24:0x3ffb2470 0x4008399d:0x3ffb2530 0x4008ab61:0x3ffb2550 0x4008fd0d:0x3ffb2570 0x400d22b9:0x3ffb26a0
+  #0  0x400dea6e in panic_print_char_uart at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:77
+  #1  0x400deaec in panic_print_char at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:117 (discriminator 3)
+      (inlined by) panic_print_str at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:130 (discriminator 3)
+  #2  0x400dec12 in esp_panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:272
+  #3  0x400df01f in panic_handler at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:188
+  #4  0x40083a41 in xt_unhandled_exception at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/panic_handler.c:219
+  #5  0x40084a24 in _xt_user_exc at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/xtensa_vectors.S:703
+  #6  0x4008399d in panic_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/panic.c:408
+  #7  0x4008ab61 in esp_system_abort at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/esp_system.c:137
+  #8  0x4008fd0d in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:85
+  #9  0x400d22b9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:152 (discriminator 1)
+
+
+
+
+
+ELF file SHA256: fff211d56f8eef72
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Sending packet: id = 1Received packet:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[2]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+Sending packet: id = 0Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[2]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]

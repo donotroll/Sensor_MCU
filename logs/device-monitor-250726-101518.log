@@ -1,0 +1,625 @@
+Sensor ID: 0
+Time: 1020
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+
+assert failed: xQueueGenericSend queue.c:821 (!( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ))
+
+
+Backtrace: 0x4008399d:0x3ffb20c0 0x4008ab61:0x3ffb20e0 0x4008fd0d:0x3ffb2100 0x4008b366:0x3ffb2230 0x400d25b6:0x3ffb2270 0x400d5615:0x3ffb2290
+
+
+
+
+ELF file SHA256: 8e7e774b7e16112c
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 180
+Sensor ID: 0
+Time: 1020
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+
+assert failed: xQueueGenericSend queue.c:821 (!( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ))
+
+
+Backtrace: 0x4008399d:0x3ffb20c0 0x4008ab61:0x3ffb20e0 0x4008fd0d:0x3ffb2100 0x4008b366:0x3ffb2230 0x400d25b6:0x3ffb2270 0x400d5615:0x3ffb2290
+
+
+
+
+ELF file SHA256: 8e7e774b7e16112c
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 180
+Sensor ID: 0
+Time: 1020
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+
+assert failed: xQueueGenericSend queue.c:821 (!( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ))
+
+
+Backtrace: 0x4008399d:0x3ffb20c0 0x4008ab61:0x3ffb20e0 0x4008fd0d:0x3ffb2100 0x4008b366:0x3ffb2230 0x400d25b6:0x3ffb2270 0x400d5615:0x3ffb2290
+
+
+
+
+ELF file SHA256: 8e7e774b7e16112c
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 180
+Sensor ID: 0
+Time: 1020
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+
+assert failed: xQueueGenericSend queue.c:821 (!( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ))
+
+
+Backtrace: 0x4008399d:0x3ffb20c0 0x4008ab61:0x3ffb20e0 0x4008fd0d:0x3ffb2100 0x4008b366:0x3ffb2230 0x400d25b6:0x3ffb2270 0x400d5615:0x3ffb2290
+
+
+
+
+ELF file SHA256: 8e7e774b7e16112c
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 180
+Sensor ID: 0
+Time: 1020
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+
+assert failed: xQueueGenericSend queue.c:821 (!( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ))
+
+
+Backtrace: 0x4008399d:0x3ffb20c0 0x4008ab61:0x3ffb20e0 0x4008fd0d:0x3ffb2100 0x4008b366:0x3ffb2230 0x400d25b6:0x3ffb2270 0x400d5615:0x3ffb2290
+
+
+
+
+ELF file SHA256: 8e7e774b7e16112c
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 180

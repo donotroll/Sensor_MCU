@@ -1,0 +1,569 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 165
+Sensor ID: 1
+Time: 165
+Sensor ID: 0
+Time: 1006
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 1018
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 2005
+Sensor ID: 1
+Time: 2006
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d22ce  PS      : 0x00060f30  A0      : 0x00000000  A1      : 0x3ffb26a0  
+  #0  0x400d22ce in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+A2      : 0x3ffb9100  A3      : 0x00000002  A4      : 0x3ffb9180  A5      : 0x3ffb99e0  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3ffb99e0  A9      : 0x00000000  
+A10     : 0x3f800000  A11     : 0x00000002  A12     : 0x3ffb8a64  A13     : 0x00000004  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40088840  LEND    : 0x40088856  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d22cb:0x3ffb26a0
+  #0  0x400d22cb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+
+
+
+
+ELF file SHA256: ebf33b10d0733eae
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 179
+Sensor ID: 0
+Time: 1019
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 1032
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 2019
+Sensor ID: 1
+Time: 2019
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d22ce  PS      : 0x00060f30  A0      : 0x00000000  A1      : 0x3ffb26a0  
+  #0  0x400d22ce in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+A2      : 0x3ffb9100  A3      : 0x00000002  A4      : 0x3ffb9180  A5      : 0x3ffb99e0  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3ffb99e0  A9      : 0x00000000  
+A10     : 0x3f800000  A11     : 0x00000002  A12     : 0x3ffb8a64  A13     : 0x00000004  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40088840  LEND    : 0x40088856  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d22cb:0x3ffb26a0
+  #0  0x400d22cb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+
+
+
+
+ELF file SHA256: ebf33b10d0733eae
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 179
+Sensor ID: 0
+Time: 1019
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 1
+Time: 1032
+Received packet:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 2, curr: 2
+    dataPoints: [1.00, 1.00]
+  data[1] = nullptr
+  data[2] = nullptr
+Sensor ID: 0
+Time: 2019
+Sensor ID: 1
+Time: 2019
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d22ce  PS      : 0x00060f30  A0      : 0x00000000  A1      : 0x3ffb26a0  
+  #0  0x400d22ce in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+A2      : 0x3ffb9100  A3      : 0x00000002  A4      : 0x3ffb9180  A5      : 0x3ffb99e0  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3ffb99e0  A9      : 0x00000000  
+A10     : 0x3f800000  A11     : 0x00000002  A12     : 0x3ffb8a64  A13     : 0x00000004  
+A14     : 0x00000000  A15     : 0x00000000  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x40088840  LEND    : 0x40088856  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d22cb:0x3ffb26a0
+  #0  0x400d22cb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:149
+
+
+
+
+
+ELF file SHA256: ebf33b10d0733eae
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[-1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+  data[0]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[1]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+  data[2]:
+    type: -1
+    len: 2, curr: 0
+    dataPoints: []
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 0
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0] = nullptr
+  data[1] = nullptr
+  data[2] = nullptr
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Sensor ID: 0
+Time: 179
+Sensor ID: 1
+Time: 179

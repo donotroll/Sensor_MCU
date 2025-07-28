@@ -41,8 +41,9 @@ void setup(void)
     d->dataPoints = &data_buffer[i * SEN_LEN];
     d->len = SEN_LEN;
 
-    printData(d, -1);
+    //printData(d, -1);
     //Serial.println((unsigned int) d);
+    //queue requires pointer to queuing item don't forget ur queuing pointers!!
     if (xQueueSend(buffer_queue, (void *)&d, portMAX_DELAY) == pdFALSE) {
       Serial.println("Failed to send data to buffer queue");
     }
@@ -50,7 +51,7 @@ void setup(void)
 
  
   //set up UDP queue
-  tx_queue = xQueueCreate(BUFFER_LEN, sizeof (UDPpacket *));
+  tx_queue = xQueueCreate(BUFFER_LEN, sizeof (UDPpacket));
 
 
   taskSensor1 = new vTaskSensor(ina219, 0, buffer_queue, tx_queue);
@@ -85,18 +86,18 @@ void loop(void) {
 
  for (;;) {
   UDPpacket *packet = new UDPpacket;
-  if ( xQueueReceive(tx_queue, packet, pdMS_TO_TICKS(DEFAULT_T_SAMPLE * SEN_LEN * 3)) == pdFALSE) {
+  if ( xQueueReceive(tx_queue, packet, portMAX_DELAY) == pdFALSE) {
     Serial.print("tx buffer remains empty? time: ");
     Serial.println(millis());
     continue;
   }
-  Serial.println("Received packet:");
+  Serial.println("===== Received packet: ===== \n time:");
+  Serial.println(millis());
   printPacket(*packet);
 
   for (int i = 0; i < packet->sz; ++i) {
-    xQueueSend(buffer_queue, packet->data[i], portMAX_DELAY);
+    xQueueSend(buffer_queue, (void *)&(packet->data[i]), portMAX_DELAY);
   }
-
 
   delete packet;
  }
