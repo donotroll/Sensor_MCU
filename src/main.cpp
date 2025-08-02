@@ -1,20 +1,23 @@
-#include <AsyncUdp.h>
 #include "common.h"
 #include "Sensor/sensor.h"
+#include "WiFi.h"
+#include <HTTPClient.h>
 
 
-const char* ssid = "WIFI_NAME";
-const char* pass = "WIFI_PASSWORD";
+const char* ssid = "The iphone";
+const char* pass = "chickennoodlesoup";
+const char* server = "127.0.0.1";
+const int port = 8888;
+
 const int relay = 23;
-AsyncUDP udp;
 
 Adafruit_INA219 ina219(0x44);
 Adafruit_INA219 ina219_b(0x40);
 vTaskSensor* taskSensor1;
 vTaskSensor* taskSensor2;
 //UDP
-char *rx_buffer[RX_BUFFER_LEN];
-char *tx_buffer[TX_BUFFER_LEN];
+byte *rx_buffer[RX_BUFFER_LEN];
+byte *tx_buffer[TX_BUFFER_LEN];
 
 
 int T_send = 1000;
@@ -22,6 +25,62 @@ int T_send = 1000;
 float data_buffer[SEN_BUFFER_LEN] = {0};
 QueueHandle_t tx_queue;
 QueueHandle_t buffer_queue;
+
+
+//Wifi
+WiFiClient client;
+
+void wifi_init() {
+  Serial.println();
+  Serial.print("[WiFi] Connecting to ");
+  Serial.println(ssid);
+
+  WiFi.begin(ssid, pass);
+  // Auto reconnect is set true as default
+  // To set auto connect off, use the following function
+  //    WiFi.setAutoReconnect(false);
+
+  // Will try for about 10 seconds (20x 500ms)
+  int tryDelay = 500;
+  int numberOfTries = 20;
+
+  // Wait for the WiFi event
+  while (true) {
+
+    switch (WiFi.status()) {
+      case WL_NO_SSID_AVAIL: Serial.println("[WiFi] SSID not found"); break;
+      case WL_CONNECT_FAILED:
+        Serial.print("[WiFi] Failed - WiFi not connected! Reason: ");
+        return;
+        break;
+      case WL_CONNECTION_LOST: Serial.println("[WiFi] Connection was lost"); break;
+      case WL_SCAN_COMPLETED:  Serial.println("[WiFi] Scan is completed"); break;
+      case WL_DISCONNECTED:    Serial.println("[WiFi] WiFi is disconnected"); break;
+      case WL_CONNECTED:
+        Serial.println("[WiFi] WiFi is connected!");
+        Serial.print("[WiFi] IP address: ");
+        Serial.println(WiFi.localIP());
+        return;
+        break;
+      default:
+        Serial.print("[WiFi] WiFi Status: ");
+        Serial.println(WiFi.status());
+        break;
+    }
+    delay(tryDelay);
+
+    if (numberOfTries <= 0) {
+      Serial.print("[WiFi] Failed to connect to WiFi!");
+      // Use disconnect function to force stop trying to connect
+      WiFi.disconnect();
+      return;
+    } else {
+      numberOfTries--;
+    }
+  }
+}
+
+
 
 void setup(void) 
 {
@@ -33,6 +92,10 @@ void setup(void)
       delay(1);
   }
   Serial.println("Hello!");
+
+
+  //init wifi
+  wifi_init();
 
   //set up buffer queue, partition bufs
   buffer_queue = xQueueCreate(BUFFER_LEN * 3, sizeof (data *));
@@ -82,6 +145,17 @@ void setup(void)
 
 }
 
+
+byte get_flags(UDPpacket* packet) {
+  byte flags = 0;
+  if (packet->id == 1) 
+    flags = flags | 0x4;
+
+  flags = flags | packet->read_flag;
+
+  return flags;
+}
+
 void loop(void) {
 
  for (;;) {
@@ -92,8 +166,16 @@ void loop(void) {
     continue;
   }
   Serial.println("===== Received packet: ===== \n time:");
-  Serial.println(millis());
   printPacket(*packet);
+  Serial.write(packet->data[1]->type);  
+  //Serial.write(TCP_data_buf, packet->data[1]->len);
+
+  //write flags
+
+  //client.write((uint8_t *)(packet->data[0]->dataPoints), packet->data[0]->len * sizeof(float));
+
+  //eof
+  //client.write("\r\n\r\n");
 
   for (int i = 0; i < packet->sz; ++i) {
     xQueueSend(buffer_queue, (void *)&(packet->data[i]), portMAX_DELAY);

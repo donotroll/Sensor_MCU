@@ -2,7 +2,6 @@
 #include "common.h"
 #include "sensor.h"
 
-
 #define  READ_CURR  0b001
 #define  READ_VOLT  0b010
 #define  READ_POW  0b100
