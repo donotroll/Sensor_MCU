@@ -1,0 +1,584 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+
+[WiFi] Connecting to yuhome
+[WiFi] WiFi is disconnected
+[WiFi] WiFi is connected!
+[WiFi] IP address: 192.168.1.119
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+===== Received packet: ===== 
+ time:
+[  1513][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  1554][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  2932][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  2957][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  4259][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  4292][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  6002][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  6210][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  7434][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  7457][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  8868][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[  8897][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 10506][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 10534][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 11940][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 11971][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 13380][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 13402][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 15012][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 15037][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 16448][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 16472][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 17888][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 18088][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 19518][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 19540][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 20962][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 20985][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 22385][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 22416][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 23756][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 23793][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 25456][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 25482][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 26894][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 26920][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 28261][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 28292][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 29964][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 29991][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 31397][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 31429][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 32769][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 32797][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 34473][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 34504][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 35905][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 35928][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 37273][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 37305][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 38976][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 39000][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 40408][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 40429][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 41781][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 41820][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 43484][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 43520][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 44915][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 44947][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 46285][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 46319][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 47999][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 48026][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 49420][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 49443][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 50790][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 50817][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 52492][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 52518][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 53927][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 53949][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 55297][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 55321][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 56997][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 57031][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 58243][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 58268][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 59868][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 59888][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 61503][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 61529][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 62772][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 62834][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 64379][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 64406][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 66217][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 66425][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 67278][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 67318][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 68877][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 68908][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 70520][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 70543][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 71948][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 71973][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 73388][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 73417][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 75026][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 75060][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 76454][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 76481][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 77888][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 78102][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 79266][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 79309][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 80962][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 80984][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 82397][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 82422][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 83765][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 83796][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 85466][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 85497][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 86901][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 86928][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 88269][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 88290][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 89975][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 90002][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 91407][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 91437][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 92776][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 92816][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 94684][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 94721][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 95911][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 95938][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 97281][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 97318][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 98990][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[ 99014][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[100418][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[100447][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[101787][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[101813][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[103488][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[103529][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[104923][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[104950][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[106359][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[106567][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[107999][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[108019][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[109433][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[109462][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[110862][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[110890][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[112502][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[112534][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[113935][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[113958][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[115373][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[115406][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[117009][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[117037][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[118244][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[118266][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[119882][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[119908][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[121512][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[121535][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[122781][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[122803][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[124380][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[124407][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[126020][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[126045][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[127247][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[127451][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[128825][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[128851][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[130256][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[130290][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[131962][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[132164][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[133396][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[133419][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[134767][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[134797][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[136467][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[136489][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[137899][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[137930][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[139267][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+[139290][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"

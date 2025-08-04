@@ -4,9 +4,9 @@
 #include <HTTPClient.h>
 
 
-const char* ssid = "The iphone";
-const char* pass = "chickennoodlesoup";
-const char* server = "127.0.0.1";
+const char* ssid = "yuhome";
+const char* pass = "MyHome@5WyvernSt";
+const char* server = "192.168.1.189";
 const int port = 8888;
 
 const int relay = 23;
@@ -166,16 +166,26 @@ void loop(void) {
     continue;
   }
   Serial.println("===== Received packet: ===== \n time:");
-  printPacket(*packet);
-  Serial.write(packet->data[1]->type);  
-  //Serial.write(TCP_data_buf, packet->data[1]->len);
 
-  //write flags
+  if (client.connect(server, port)) {
+    Serial.println("printing!");
+    printPacket(*packet);
 
-  //client.write((uint8_t *)(packet->data[0]->dataPoints), packet->data[0]->len * sizeof(float));
+    client.write(packet->id);  
+    client.write("\r\n\n");
+    client.write(packet->read_flag);
+    client.write("\r\n\n");
+    client.write((uint8_t *)&(packet->T_sample), sizeof(packet->T_sample));
+    client.write("\r\n\n");
+    client.write((uint8_t *)(packet->data[0]->dataPoints), packet->data[0]->len * sizeof(float));
+    client.write("\r\n\n");
+    client.write((uint8_t *)(packet->data[1]->dataPoints), packet->data[1]->len * sizeof(float));
+    client.write("\r\n\n");
+    client.write((uint8_t *)(packet->data[2]->dataPoints), packet->data[2]->len * sizeof(float));
 
-  //eof
-  //client.write("\r\n\r\n");
+    client.flush();
+  }
+
 
   for (int i = 0; i < packet->sz; ++i) {
     xQueueSend(buffer_queue, (void *)&(packet->data[i]), portMAX_DELAY);

@@ -1,0 +1,1636 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+  #0  0x40080400 in _init at ??:?
+
+entry 0x400805e4
+Hello!
+
+[WiFi] Connecting to yuhome
+[WiFi] WiFi is disconnected
+[WiFi] WiFi is connected!
+[WiFi] IP address: 192.168.1.119
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 0
+Failed to find INA219 chip
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+vTaskSensorRead started
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+===== Received packet: ===== 
+ time:
+Failed to delay task
+Failed to delay task
+Failed to delay task
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [718.00, 954.00, 862.00, 295.00, 535.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [346.00, 97.00, 650.00, 795.00, 516.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [838.00, 825.00, 378.00, 637.00, 586.00]
+===== Received packet: ===== 
+ time:
+Failed to delay task
+Failed to delay task
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [971.00, 694.00, 208.00, 79.00, 983.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [776.00, 641.00, 366.00, 328.00, 721.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [506.00, 87.00, 44.00, 377.00, 271.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [884.00, 188.00, 561.00, 332.00, 887.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [123.00, 497.00, 891.00, 833.00, 383.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [575.00, 236.00, 222.00, 458.00, 984.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [793.00, 663.00, 669.00, 115.00, 113.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [485.00, 991.00, 331.00, 249.00, 764.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [433.00, 331.00, 840.00, 785.00, 174.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [355.00, 200.00, 487.00, 222.00, 353.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [379.00, 401.00, 859.00, 159.00, 916.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [439.00, 167.00, 587.00, 334.00, 420.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [137.00, 484.00, 343.00, 70.00, 164.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [659.00, 668.00, 350.00, 453.00, 907.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [641.00, 493.00, 46.00, 826.00, 35.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [192.00, 459.00, 645.00, 847.00, 719.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [913.00, 357.00, 536.00, 460.00, 446.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [299.00, 270.00, 790.00, 46.00, 466.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [235.00, 76.00, 123.00, 909.00, 333.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [693.00, 505.00, 518.00, 239.00, 441.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [614.00, 84.00, 635.00, 688.00, 73.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [911.00, 81.00, 63.00, 20.00, 892.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [130.00, 716.00, 274.00, 576.00, 365.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [971.00, 32.00, 741.00, 901.00, 699.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [869.00, 393.00, 88.00, 477.00, 864.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [336.00, 96.00, 131.00, 624.00, 544.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [361.00, 160.00, 914.00, 227.00, 328.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [25.00, 884.00, 192.00, 843.00, 310.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [831.00, 287.00, 807.00, 702.00, 501.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [953.00, 941.00, 651.00, 336.00, 438.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [167.00, 266.00, 943.00, 485.00, 24.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [869.00, 938.00, 48.00, 976.00, 219.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [529.00, 849.00, 519.00, 193.00, 310.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [82.00, 337.00, 778.00, 398.00, 178.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [898.00, 833.00, 164.00, 572.00, 573.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [816.00, 618.00, 385.00, 733.00, 443.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [109.00, 56.00, 63.00, 601.00, 23.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [598.00, 799.00, 572.00, 845.00, 277.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [587.00, 727.00, 224.00, 987.00, 651.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [349.00, 665.00, 505.00, 595.00, 895.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [657.00, 879.00, 396.00, 283.00, 973.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [862.00, 399.00, 63.00, 789.00, 961.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [729.00, 213.00, 15.00, 272.00, 941.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [791.00, 337.00, 541.00, 677.00, 300.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [57.00, 786.00, 160.00, 861.00, 17.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [334.00, 439.00, 227.00, 902.00, 884.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [667.00, 473.00, 466.00, 154.00, 258.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [709.00, 283.00, 218.00, 32.00, 413.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [623.00, 444.00, 861.00, 799.00, 386.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [117.00, 429.00, 767.00, 765.00, 515.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [115.00, 101.00, 373.00, 387.00, 8.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [312.00, 88.00, 432.00, 350.00, 142.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [675.00, 332.00, 291.00, 538.00, 259.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [766.00, 507.00, 656.00, 634.00, 615.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [192.00, 102.00, 680.00, 934.00, 759.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [155.00, 499.00, 343.00, 891.00, 453.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [498.00, 234.00, 886.00, 697.00, 656.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [783.00, 615.00, 837.00, 267.00, 933.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [820.00, 517.00, 853.00, 280.00, 630.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [917.00, 966.00, 65.00, 181.00, 774.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [647.00, 811.00, 732.00, 462.00, 689.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [416.00, 553.00, 406.00, 180.00, 865.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [86.00, 817.00, 892.00, 69.00, 945.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [58.00, 772.00, 869.00, 657.00, 446.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [230.00, 574.00, 275.00, 68.00, 668.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [196.00, 711.00, 93.00, 569.00, 415.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [958.00, 201.00, 681.00, 925.00, 61.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [415.00, 388.00, 419.00, 349.00, 281.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [177.00, 102.00, 699.00, 184.00, 68.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [51.00, 812.00, 204.00, 384.00, 412.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [143.00, 330.00, 946.00, 369.00, 518.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [518.00, 396.00, 449.00, 441.00, 7.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [539.00, 368.00, 757.00, 208.00, 123.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [354.00, 509.00, 435.00, 510.00, 38.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [3.00, 115.00, 66.00, 296.00, 740.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [477.00, 305.00, 340.00, 59.00, 314.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [506.00, 866.00, 3.00, 840.00, 301.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [294.00, 357.00, 666.00, 740.00, 646.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [799.00, 799.00, 64.00, 590.00, 591.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [891.00, 851.00, 878.00, 401.00, 145.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [921.00, 104.00, 388.00, 602.00, 10.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [886.00, 385.00, 791.00, 552.00, 328.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [823.00, 102.00, 878.00, 512.00, 9.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [254.00, 159.00, 218.00, 280.00, 72.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [813.00, 683.00, 470.00, 748.00, 588.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [657.00, 420.00, 866.00, 154.00, 183.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [60.00, 84.00, 95.00, 181.00, 810.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [845.00, 740.00, 931.00, 759.00, 280.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [768.00, 8.00, 470.00, 885.00, 815.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [323.00, 441.00, 625.00, 677.00, 51.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [732.00, 29.00, 993.00, 404.00, 441.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [506.00, 280.00, 404.00, 402.00, 796.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [564.00, 608.00, 748.00, 186.00, 413.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [235.00, 437.00, 335.00, 527.00, 106.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [746.00, 500.00, 397.00, 996.00, 572.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [607.00, 189.00, 935.00, 23.00, 1.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [407.00, 102.00, 449.00, 213.00, 283.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [941.00, 170.00, 33.00, 944.00, 790.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [399.00, 38.00, 280.00, 643.00, 912.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [375.00, 485.00, 505.00, 794.00, 948.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [463.00, 881.00, 121.00, 103.00, 598.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [221.00, 719.00, 960.00, 242.00, 979.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [779.00, 820.00, 880.00, 912.00, 433.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [52.00, 792.00, 371.00, 119.00, 949.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [743.00, 707.00, 22.00, 452.00, 879.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [741.00, 952.00, 677.00, 1.00, 283.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [804.00, 51.00, 340.00, 125.00, 559.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [770.00, 571.00, 15.00, 31.00, 501.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [574.00, 481.00, 942.00, 60.00, 959.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [291.00, 617.00, 892.00, 944.00, 30.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [66.00, 831.00, 819.00, 512.00, 543.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [462.00, 271.00, 549.00, 296.00, 351.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [953.00, 458.00, 129.00, 13.00, 802.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [568.00, 85.00, 793.00, 802.00, 805.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [243.00, 492.00, 886.00, 572.00, 575.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [904.00, 217.00, 346.00, 426.00, 735.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [478.00, 372.00, 55.00, 837.00, 394.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [365.00, 234.00, 151.00, 560.00, 558.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [778.00, 13.00, 229.00, 139.00, 609.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [418.00, 836.00, 14.00, 842.00, 248.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [23.00, 816.00, 322.00, 169.00, 893.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [521.00, 961.00, 92.00, 626.00, 729.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [574.00, 281.00, 869.00, 542.00, 84.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [949.00, 3.00, 547.00, 936.00, 456.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [128.00, 660.00, 97.00, 136.00, 520.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [678.00, 782.00, 291.00, 324.00, 551.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [574.00, 34.00, 899.00, 683.00, 643.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [645.00, 312.00, 157.00, 600.00, 305.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [37.00, 481.00, 328.00, 278.00, 456.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [301.00, 384.00, 419.00, 103.00, 528.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [803.00, 200.00, 797.00, 451.00, 478.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [265.00, 818.00, 645.00, 398.00, 774.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [377.00, 174.00, 799.00, 487.00, 621.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [4.00, 492.00, 21.00, 280.00, 430.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [823.00, 202.00, 410.00, 136.00, 51.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [246.00, 818.00, 239.00, 182.00, 415.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [871.00, 813.00, 812.00, 93.00, 439.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [735.00, 193.00, 123.00, 18.00, 692.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [70.00, 173.00, 222.00, 394.00, 25.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [101.00, 731.00, 22.00, 852.00, 911.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [263.00, 775.00, 706.00, 655.00, 608.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [76.00, 23.00, 988.00, 484.00, 995.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [107.00, 344.00, 936.00, 270.00, 979.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [337.00, 936.00, 209.00, 496.00, 46.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [703.00, 557.00, 642.00, 192.00, 130.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [948.00, 495.00, 976.00, 444.00, 923.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [752.00, 520.00, 721.00, 773.00, 622.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [151.00, 620.00, 142.00, 927.00, 137.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [151.00, 878.00, 494.00, 750.00, 497.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [896.00, 75.00, 674.00, 196.00, 39.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [787.00, 75.00, 971.00, 196.00, 259.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [911.00, 335.00, 694.00, 161.00, 143.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [18.00, 79.00, 459.00, 987.00, 477.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [267.00, 439.00, 842.00, 445.00, 77.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [822.00, 897.00, 448.00, 853.00, 419.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [406.00, 750.00, 638.00, 753.00, 273.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [857.00, 70.00, 540.00, 724.00, 979.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [388.00, 688.00, 863.00, 907.00, 651.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [423.00, 519.00, 933.00, 335.00, 799.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [972.00, 221.00, 504.00, 416.00, 570.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [525.00, 529.00, 682.00, 918.00, 198.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [438.00, 892.00, 341.00, 573.00, 389.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [447.00, 284.00, 142.00, 962.00, 245.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [424.00, 633.00, 670.00, 101.00, 199.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [546.00, 881.00, 300.00, 267.00, 849.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [742.00, 369.00, 912.00, 174.00, 486.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [2.00, 588.00, 726.00, 345.00, 47.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [107.00, 978.00, 528.00, 196.00, 58.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [539.00, 449.00, 427.00, 387.00, 211.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [484.00, 220.00, 44.00, 362.00, 244.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [446.00, 101.00, 47.00, 369.00, 326.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [227.00, 514.00, 469.00, 963.00, 586.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [779.00, 664.00, 285.00, 967.00, 541.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [428.00, 315.00, 368.00, 383.00, 492.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [177.00, 869.00, 814.00, 451.00, 221.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [324.00, 389.00, 888.00, 637.00, 945.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [940.00, 786.00, 604.00, 342.00, 660.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [177.00, 315.00, 622.00, 355.00, 455.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [265.00, 100.00, 230.00, 436.00, 671.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [709.00, 74.00, 878.00, 294.00, 281.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [225.00, 648.00, 281.00, 583.00, 534.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [392.00, 659.00, 818.00, 5.00, 958.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [182.00, 273.00, 563.00, 704.00, 587.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [977.00, 42.00, 789.00, 5.00, 620.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [254.00, 860.00, 643.00, 662.00, 478.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [721.00, 502.00, 860.00, 724.00, 732.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [873.00, 761.00, 816.00, 183.00, 581.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [8.00, 174.00, 18.00, 186.00, 583.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [808.00, 753.00, 66.00, 864.00, 189.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [433.00, 3.00, 858.00, 722.00, 797.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [473.00, 50.00, 692.00, 87.00, 710.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [965.00, 298.00, 746.00, 861.00, 628.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [718.00, 608.00, 6.00, 877.00, 353.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [354.00, 232.00, 278.00, 311.00, 746.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [345.00, 100.00, 385.00, 217.00, 938.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [387.00, 706.00, 922.00, 648.00, 516.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [30.00, 438.00, 64.00, 848.00, 907.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [672.00, 120.00, 892.00, 568.00, 265.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [414.00, 840.00, 632.00, 433.00, 422.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [467.00, 794.00, 606.00, 372.00, 479.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [369.00, 292.00, 483.00, 815.00, 780.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [765.00, 284.00, 738.00, 387.00, 610.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [314.00, 626.00, 21.00, 939.00, 205.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [824.00, 70.00, 699.00, 393.00, 243.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [791.00, 378.00, 207.00, 928.00, 775.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [836.00, 560.00, 678.00, 235.00, 312.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [201.00, 936.00, 761.00, 627.00, 767.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [283.00, 904.00, 428.00, 791.00, 222.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [493.00, 988.00, 974.00, 625.00, 366.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [87.00, 793.00, 517.00, 52.00, 918.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [771.00, 522.00, 739.00, 456.00, 342.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [500.00, 948.00, 978.00, 326.00, 650.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [531.00, 738.00, 590.00, 745.00, 796.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [828.00, 438.00, 490.00, 51.00, 393.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [963.00, 145.00, 328.00, 904.00, 254.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [446.00, 293.00, 597.00, 24.00, 425.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [956.00, 921.00, 959.00, 21.00, 116.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [290.00, 741.00, 710.00, 595.00, 46.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [454.00, 258.00, 853.00, 561.00, 671.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [912.00, 662.00, 53.00, 506.00, 709.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [354.00, 564.00, 987.00, 966.00, 252.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [473.00, 727.00, 686.00, 361.00, 144.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [672.00, 421.00, 124.00, 714.00, 88.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [340.00, 696.00, 778.00, 18.00, 516.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [168.00, 885.00, 739.00, 352.00, 832.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [880.00, 528.00, 801.00, 97.00, 885.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [208.00, 160.00, 404.00, 323.00, 764.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [759.00, 861.00, 249.00, 605.00, 146.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [876.00, 875.00, 728.00, 857.00, 510.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [277.00, 999.00, 610.00, 426.00, 224.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [350.00, 630.00, 811.00, 887.00, 236.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [653.00, 195.00, 585.00, 989.00, 979.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [568.00, 589.00, 872.00, 853.00, 304.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [18.00, 351.00, 563.00, 196.00, 947.00]
+===== Received packet: ===== 
+ time:
+printing!
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: 0
+    len: 5, curr: 5
+    dataPoints: [763.00, 702.00, 22.00, 445.00, 448.00]
+  data[1]:
+    type: 1
+    len: 5, curr: 5
+    dataPoints: [192.00, 489.00, 538.00, 467.00, 407.00]
+  data[2]:
+    type: 2
+    len: 5, curr: 5
+    dataPoints: [767.00, 244.00, 117.00, 155.00, 884.00]

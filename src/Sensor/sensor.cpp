@@ -114,6 +114,8 @@ void data_reset(data *d, int type) {
 
 void vTaskSensorRead(void *parameters) {
   //copy params
+  vTaskDelay(pdMS_TO_TICKS(1000)); //give time for other tasks to start
+  Serial.println("vTaskSensorRead started");
   vTaskSensor *sensor = static_cast<vTaskSensor *>(parameters);
 
   for(;;) {
@@ -134,7 +136,7 @@ void vTaskSensorRead(void *parameters) {
     //retrieve new buffer, config? (blocking)
     if (d_old->curr == d_old->len) {
       data *d_new = new data;
-      if ( ((packet->read_flag >> i) & 0x1) == 0x1) {
+      if ( ((packet->read_flag >> i) & 0x1) == 0x1) {//if read flag is set, request new chunk
         if ( xQueueReceive(sensor->in_buffer,d_new, DEFAULT_TIMEOUT ) == pdFALSE) {
           Serial.println("Something is blocking buffer queue!");
         }
@@ -177,7 +179,7 @@ void vTaskSensorRead(void *parameters) {
 
     //copy params
     sensor->packet_next = new UDPpacket;
-    sensor->packet_next->id = sensor->packet_curr->id;
+    sensor->packet_next->id = sensor->id;
     sensor->packet_next->read_flag = sensor->packet_curr->read_flag;
     sensor->packet_next->sz = sensor->packet_curr->sz;
     sensor->packet_next->T_sample = sensor->packet_curr->T_sample;
