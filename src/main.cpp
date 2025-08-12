@@ -6,7 +6,7 @@
 
 const char* ssid = "yuhome";
 const char* pass = "MyHome@5WyvernSt";
-const char* server = "172.20.10.5";
+const char* server = "192.168.1.189";
 const int port = 8888;
 
 const int relay = 23;
@@ -166,7 +166,6 @@ void loop(void) {
   }
   Serial.println("===== Received packet: ===== \n time:");
   Serial.println(millis());
-  printPacket(*packet);
   
   if (client.connect(server, port)) {
     //Serial.println("printing!");
@@ -193,6 +192,7 @@ void loop(void) {
     xQueueSend(buffer_queue, (void *)&(packet->data[i]), portMAX_DELAY);
   }
 
+  Serial.println();
   delete packet;
  }
 }
