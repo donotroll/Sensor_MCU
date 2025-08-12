@@ -1,0 +1,90 @@
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+Failed to Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+Failed to delay task
+[  3685][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  4092][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.40, -0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 4.00, 0.00]

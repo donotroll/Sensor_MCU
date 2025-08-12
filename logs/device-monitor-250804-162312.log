@@ -1,0 +1,2271 @@
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+Failed to delay task
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+Failed to delay task
+Failed to delay task
+FaFailed to delay task
+[  3639][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  3844][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-11.30, -7.50, -7.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [52.00, 26.00, 26.00]
+[  4254][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.20, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  4458][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -7.50, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 26.00, 16.00]
+[  4663][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  4868][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-8.30, -5.10, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [22.00, 16.00, 16.00]
+[  6097][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.30, -0.30, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  6302][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -4.90, -5.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[  7530][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.20, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  7735][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -4.80, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[  9169][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.30, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.04, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[  9374][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-8.10, -4.90, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 10602][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.10, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 11012][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.90, -4.80, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 12051][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.30, 0.00, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 12102][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -4.80, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 13470][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, 0.00, -0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [4.00, 0.00, 0.00]
+[ 13879][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.40, -5.50, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 14711][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 4.00, 0.00]
+[ 14728][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.00, -4.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 16578][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 16753][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.80, -7.60, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 26.00, 16.00]
+[ 17975][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 18180][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.70, -4.90, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [22.00, 16.00, 16.00]
+[ 19210][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, 0.20, 0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 19228][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -4.90, -5.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 21047][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.20, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 21354][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.20, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 22481][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.10, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.05, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 22693][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.80, -5.00, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 23715][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.20, -0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 23733][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.00, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 25553][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 25760][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.00, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 26691][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.20, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 26710][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 28220][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 28238][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -4.80, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 30062][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [4.00, 0.00, 0.00]
+[ 30263][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.20, -4.80, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 31191][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.30, -0.30, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.06, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 31210][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.40, -5.20, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 33140][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.10, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 33336][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.70, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 34380][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.10, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.06, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 34397][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -7.60, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 35998][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.10, -0.40]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 36203][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -5.00, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 37233][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.10, -0.30, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 37251][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.10, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 39072][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.10, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 39276][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.30, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 22.00, 16.00]
+[ 40204][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.04, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 40226][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.00, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 41736][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.40, 0.00, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.06, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 41754][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.20, -5.40, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 43576][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 43784][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.20, -4.90]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 45011][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.10, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 45418][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.10, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 46273][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, 0.00, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.05, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 46291][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.20, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 48195][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.30, 0.00, -0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 48491][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.40, -5.10, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 49191][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, -0.40]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 49211][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 51153][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 51562][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.30, -5.00, -7.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 52586][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.30, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 4.00, 0.00]
+[ 52996][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -5.20, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 53718][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.30, -0.20, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 54020][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -5.00, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 55351][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.02, 5.03, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 55865][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.30, -4.90, -5.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [22.00, 16.00, 26.00]
+[ 57093][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 57297][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.20, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 58732][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.20, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 58795][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -5.20, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 60061][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.20, -0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 60369][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.20, -7.20, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 61603][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.10, -0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 61802][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-6.00, -5.10, -5.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 62728][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.30, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 62747][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.90, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 64470][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 64669][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-8.10, -5.10, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 65696][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.10, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.04, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 65714][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.00, -5.00, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 67537][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.10, -0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.06, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 67741][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.00, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 68970][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.20, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 69380][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-6.20, -5.30, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 70223][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.10, 0.00, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.03, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 70241][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.30, -4.90, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 72135][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.20, -0.10, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 72452][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.80, -5.10, -4.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 16.00, 16.00]
+[ 73191][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.20, -0.20, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.03, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 73209][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-4.80, -4.90, -4.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [20.00, 16.00, 16.00]
+[ 74715][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.03, 5.05, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 74734][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.30, -5.10, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 76343][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.04, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 76548][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.10, -5.10, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 78186][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, -0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 78391][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.20, -4.80, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 79214][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 79233][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.30, -4.80, -5.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 80761][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 80788][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.40, -5.10, -5.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 82701][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 83101][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-5.40, -4.90, -5.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [16.00, 16.00, 16.00]
+[ 83721][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.50, 0.00, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 83740][E][WiFiClient.cpp:275] connect(): socket error on fd 48, errno: 104, "Connection reset by peer"

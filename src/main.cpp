@@ -6,21 +6,19 @@
 
 const char* ssid = "yuhome";
 const char* pass = "MyHome@5WyvernSt";
-const char* server = "192.168.1.189";
+const char* server = "172.20.10.5";
 const int port = 8888;
 
 const int relay = 23;
 
-Adafruit_INA219 ina219(0x44);
-Adafruit_INA219 ina219_b(0x40);
+Adafruit_INA219 ina219(0x40);
+Adafruit_INA219 ina219_b(0x4A);
 vTaskSensor* taskSensor1;
 vTaskSensor* taskSensor2;
 //UDP
-byte *rx_buffer[RX_BUFFER_LEN];
-byte *tx_buffer[TX_BUFFER_LEN];
+uint8_t rx_buffer[RX_BUFFER_LEN];
 
 
-int T_send = 1000;
 //buffer 
 float data_buffer[SEN_BUFFER_LEN] = {0};
 QueueHandle_t tx_queue;
@@ -42,7 +40,7 @@ void wifi_init() {
 
   // Will try for about 10 seconds (20x 500ms)
   int tryDelay = 500;
-  int numberOfTries = 20;
+  int numberOfTries = 1000;
 
   // Wait for the WiFi event
   while (true) {
@@ -91,6 +89,7 @@ void setup(void)
       // will pause Zero, Leonardo, etc until serial console opens
       delay(1);
   }
+  delay(5000);
   Serial.println("Hello!");
 
 
@@ -161,14 +160,16 @@ void loop(void) {
  for (;;) {
   UDPpacket *packet = new UDPpacket;
   if ( xQueueReceive(tx_queue, packet, portMAX_DELAY) == pdFALSE) {
-    Serial.print("tx buffer remains empty? time: ");
-    Serial.println(millis());
+    //Serial.print("tx buffer remains empty? time: ");
+    //Serial.println(millis());
     continue;
   }
   Serial.println("===== Received packet: ===== \n time:");
-
+  Serial.println(millis());
+  printPacket(*packet);
+  
   if (client.connect(server, port)) {
-    Serial.println("printing!");
+    //Serial.println("printing!");
     printPacket(*packet);
 
     client.write(packet->id);  
@@ -184,6 +185,7 @@ void loop(void) {
     client.write((uint8_t *)(packet->data[2]->dataPoints), packet->data[2]->len * sizeof(float));
 
     client.flush();
+
   }
 
 

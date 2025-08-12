@@ -1,0 +1,245 @@
+
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.50, -7.70, -7.70]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.32, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 32688][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.20, 0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.05, 5.04, 5.06]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 32699][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.70, -8.10, -7.70]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.32, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 34188][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-0.10, -0.20, -0.20]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.05, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 34199][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-8.00, -7.70, -7.60]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 35688][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.10, 0.10, -0.10]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.06, 5.04]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 35699][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.20, -8.10, -7.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 37188][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.30]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.05, 5.05]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 37199][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-7.50, -7.90, -7.80]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.33]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 38688][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.10, 0.00, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.03, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 38699][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [-8.10, -8.00, -8.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [3.33, 3.33, 3.32]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [26.00, 26.00, 26.00]
+[ 40188][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 500 ms
+  data[0]:
+    type: 0
+    len: 3, curr: 3
+    dataPoints: [0.20, 0.20, 0.00]
+  data[1]:
+    type: 1
+    len: 3, curr: 3
+    dataPoints: [5.06, 5.05, 5.03]
+  data[2]:
+    type: 2
+    len: 3, curr: 3
+    dataPoints: [0.00, 0.00, 0.00]
+[ 40199][E][WiFiClient.cpp:249] connect(): connect on fd 48, errno: 118, "Host is unreachable"

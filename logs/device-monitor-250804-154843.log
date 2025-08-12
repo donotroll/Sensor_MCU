@@ -1,0 +1,600 @@
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[Failed to delay task0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.0, 0.00, 0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x4037c413  PS      : 0x00060736  A0      : 0x82005fb4  A1      : 0x3fceccf0  
+  #0  0x4037c413 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+
+A2      : 0x3fcec9c0  A3      : 0xffffffff  A4      : 0x3fcec83c  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x8037c547  A9      : 0x3fcecd90  
+A10     : 0x3fc97744  A11     : 0x3fc94770  A12     : 0x3fc97744  A13     : 0x00060523  
+  #0  0x3fc97744 in ?? at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/port.c:91
+
+A14     : 0x00060520  A15     : 0x00000001  SAR     : 0x0000001b  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037c410:0x3fceccf0 0x42005fb1:0x3fcecd30 0x42003325:0x3fcece10 0x42026c26:0x3fcece30 0x42026989:0x3fcece60 0x42026a5f:0x3fcece90 0x4200366b:0x3fceceb0 0x420036f9:0x3fcecf20 0x420028a9:0x3fcecf40 0x420029bb:0x3fcecf60
+  #0  0x4037c410 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+  #1  0x42005fb1 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:142 (discriminator 1)
+  #2  0x42003325 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c26 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x42026989 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a5f in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x4200366b in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x420036f9 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a9 in ReadFrom(Adafruit_INA219*, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029bb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:156
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0Failed to delay task
+]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+Failed to delay task
+ Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x4037c413  PS      : 0x00060d36  A0      : 0x82005fb4  A1      : 0x3fceccf0  
+  #0  0x4037c413 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+
+A2      : 0x3fcec9c0  A3      : 0xffffffff  A4      : 0x3fcec83c  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x8037c547  A9      : 0x3fcecd90  
+A10     : 0x3fc97744  A11     : 0x3fc94770  A12     : 0x3fc97744  A13     : 0x00060b23  
+  #0  0x3fc97744 in ?? at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/port.c:91
+
+A14     : 0x00060b20  A15     : 0x00000001  SAR     : 0x0000001b  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037c410:0x3fceccf0 0x42005fb1:0x3fcecd30 0x42003325:0x3fcece10 0x42026c26:0x3fcece30 0x42026989:0x3fcece60 0x42026a5f:0x3fcece90 0x4200366b:0x3fceceb0 0x420036f9:0x3fcecf20 0x420028a9:0x3fcecf40 0x420029bb:0x3fcecf60
+  #0  0x4037c410 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+  #1  0x42005fb1 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:142 (discriminator 1)
+  #2  0x42003325 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c26 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x42026989 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a5f in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x4200366b in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x420036f9 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a9 in ReadFrom(Adafruit_INA219*, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029bb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:156
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+Failed to delay task
+Guru Meditation Error: Core  1 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  1 register dump:
+PC      : 0x4037c413  PS      : 0x00060c36  A0      : 0x82005fb4  A1      : 0x3fceccf0  
+  #0  0x4037c413 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+
+A2      : 0x3fcec9c0  A3      : 0xffffffff  A4      : 0x8037ae69  A5      : 0x3fc94680  
+A6      : 0x3fc97744  A7      : 0x3fc97744  A8      : 0x3fc97748  A9      : 0x3fc946ec  
+  #0  0x3fc97744 in ?? at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/port.c:91
+
+A10     : 0x00060021  A11     : 0x00000001  A12     : 0x8037e79d  A13     : 0x3fc94670  
+A14     : 0x00060023  A15     : 0x00000001  SAR     : 0x0000001b  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037c410:0x3fceccf0 0x42005fb1:0x3fcecd30 0x42003325:0x3fcece10 0x42026c26:0x3fcece30 0x42026989:0x3fcece60 0x42026a5f:0x3fcece90 0x4200366b:0x3fceceb0 0x420036f9:0x3fcecf20 0x420028a9:0x3fcecf40 0x420029bb:0x3fcecf60
+  #0  0x4037c410 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+  #1  0x42005fb1 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:142 (discriminator 1)
+  #2  0x42003325 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c26 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x42026989 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a5f in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x4200366b in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x420036f9 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a9 in ReadFrom(Adafruit_INA219*, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029bb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:156
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c7e
+  #0  0x42036c7e in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[Failed to delay task
+not configured
+not configured
+not configured
+0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+Failed to delay task
+    dataPoints: [Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor2) 
+Core  0 register dump:
+PC      : 0x4037c413  PS      : 0x00060336  A0      : 0x82005fb4  A1      : 0x3fced270  
+  #0  0x4037c413 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+
+A2      : 0x3fcec9c0  A3      : 0xffffffff  A4      : 0x3fcec83c  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x8037c547  A9      : 0x3fced310  
+A10     : 0x3fc97744  A11     : 0x3fc94770  A12     : 0x3fc97744  A13     : 0x00060123  
+  #0  0x3fc97744 in ?? at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/port.c:91
+
+A14     : 0x00060120  A15     : 0x00000001  SAR     : 0x0000001b  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037c410:0x3fced270 0x42005fb1:0x3fced2b0 0x42003325:0x3fced390 0x42026c26:0x3fced3b0 0x42026989:0x3fced3e0 0x42026a5f:0x3fced410 0x4200366b:0x3fced430 0x420036f9:0x3fced4a0 0x420028a9:0x3fced4c0 0x420029bb:0x3fced4e0
+  #0  0x4037c410 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+  #1  0x42005fb1 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:142 (discriminator 1)
+  #2  0x42003325 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c26 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x42026989 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a5f in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x4200366b in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x420036f9 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a9 in ReadFrom(Adafruit_INA219*, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029bb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:156
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037e319  PS      : 0x00060034  A0      : 0x8202250c  A1      : 0x3fc97f60  
+  #0  0x4037e319 in prvNextTaskGet at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/esp_additions/task_snapshot.c:114
+      (inlined by) pxTaskGetNext at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/esp_additions/task_snapshot.c:152
+
+A2      : 0x3fc97840  A3      : 0x00316465  A4      : 0x3fced0dc  A5      : 0x0000024c  
+A6      : 0x00000008  A7      : 0x3fc98140  A8      : 0x8037e379  A9      : 0x3fc97f40  
+A10     : 0x3fced0e4  A11     : 0x3c04d472  A12     : 0x000000ff  A13     : 0x0000ff00  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000018  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00316471  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037e316:0x3fc97f60 0x42022509:0x3fc97fa0 0x4202300f:0x3fc97fc0 0x42023424:0x3fc98050 0x420224ad:0x3fc98080
+  #0  0x4037e316 in pxTaskGetNext at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/esp_additions/task_snapshot.c:155 (discriminator 2)
+  #1  0x42022509 in esp_core_dump_get_next_task at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_common.c:203
+  #2  0x4202300f in elf_process_tasks_regs at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_elf.c:395
+      (inlined by) elf_write_tasks_data at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_elf.c:442
+      (inlined by) esp_core_dump_do_write_elf_pass at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_elf.c:551
+  #3  0x42023424 in esp_core_dump_write_elf at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_elf.c:584 (discriminator 2)
+  #4  0x420224ad in esp_core_dump_write at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/espcoredump/src/core_dump_common.c:165
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+Failed to delay task
+not configured
+not configured
+not configured
+===== Received packet: ===== 
+ time:
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 300 ms
+  data[0]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[1]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00]
+  data[2]:
+    type: -1
+    len: 5, curr: 5
+    dataPoints: [0.00, 0.00, 0.00, 0.00, 0.00Failed to delay task]Failed to delay task
+
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x4037c413  PS      : 0x00060d36  A0      : 0x82005fb4  A1      : 0x3fceccf0  
+  #0  0x4037c413 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+
+A2      : 0x3fcec9c0  A3      : 0xffffffff  A4      : 0x3fcec83c  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x8037c547  A9      : 0x3fcecd90  
+A10     : 0x3fc97744  A11     : 0x3fc94770  A12     : 0x3fc97744  A13     : 0x00060b23  
+  #0  0x3fc97744 in ?? at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/port.c:91
+
+A14     : 0x00060b20  A15     : 0x00000001  SAR     : 0x0000001b  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037c410:0x3fceccf0 0x42005fb1:0x3fcecd30 0x42003325:0x3fcece10 0x42026c26:0x3fcece30 0x42026989:0x3fcece60 0x42026a5f:0x3fcece90 0x4200366b:0x3fceceb0 0x420036f9:0x3fcecf20 0x420028a9:0x3fcecf40 0x420029bb:0x3fcecf60
+  #0  0x4037c410 in xQueueSemaphoreTake at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/queue.c:1535
+  #1  0x42005fb1 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:142 (discriminator 1)
+  #2  0x42003325 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c26 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x42026989 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a5f in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x4200366b in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x420036f9 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a9 in ReadFrom(Adafruit_INA219*, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029bb in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:156
+
+
+
+
+
+ELF file SHA256: 4442ad3703e70ed1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!

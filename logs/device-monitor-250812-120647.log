@@ -1,0 +1,186 @@
+Hello!
+
+[WiFi] Connecting to yuhome
+[WiFi] WiFi is disconnected
+[WiFi] WiFi Status: 0
+[WiFi] WiFi is connected!
+[WiFi] IP address: 192.168.1.118
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configured
+not configured
+Sending packet: id = 0===== Received packet: ===== 
+ time:
+8481
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000vTaskSensorRead started
+ ms
+  data[0]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+  data[1]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+  data[2]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+Failed to delay task
+not configured
+not configured
+not configured
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+Sending packet: id = 0Failed to delay task
+Sending packet: id = 1Failed to delay task
+ time:
+11486
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+  data[1]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+  data[2]:
+    type: -1
+    len: 1, curr: 1
+    dataPoints: [0.00]
+ time:
+14490
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [1509.70]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [3.16]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [4737.50]
+ time:
+17493
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [-0.10]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [5.03]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [0.00]
+ time:
+20497
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [1512.50]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [3.16]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [4731.50]
+ time:
+23501
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [-0.20]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [5.06]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [0.00]
+ time:
+26505
+=== UDPpacket ===
+id: 0
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [1513.00]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [3.16]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [4737.50]
+ time:
+29509
+=== UDPpacket ===
+id: 1
+sz: 3, curr: 3
+read_flag: 0b111
+T_sample: 1000 ms
+  data[0]:
+    type: 0
+    len: 1, curr: 1
+    dataPoints: [0.00]
+  data[1]:
+    type: 1
+    len: 1, curr: 1
+    dataPoints: [5.05]
+  data[2]:
+    type: 2
+    len: 1, curr: 1
+    dataPoints: [0.00]

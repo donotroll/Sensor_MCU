@@ -56,7 +56,7 @@ vTaskSensor::vTaskSensor(Adafruit_INA219 ina219, int id, QueueHandle_t in, Queue
   this->id = id;
 
   for (int i = 0; i < 3; ++i) {
-    if ( xQueueReceive(in_buffer, (void *)&read_to[i], DEFAULT_TIMEOUT) == pdFALSE) {
+    if ( xQueueReceive(in_buffer, (void *)&read_to[i], portMAX_DELAY) == pdFALSE) {
       Serial.println("uninitialised buffer!");
     }
     //Serial.println((unsigned int) read_to[i]);
@@ -76,29 +76,30 @@ vTaskSensor::vTaskSensor(Adafruit_INA219 ina219, int id, QueueHandle_t in, Queue
   // you can call a setCalibration function to change this range (see comments).
   if (! this->ina219.begin()) {
     Serial.println("Failed to find INA219 chip");
+    Serial.println(this->id);
     //while (1) { delay(10); }
   }
   // To use a slightly lower 32V, 1A range (higher precision on amps):
   //ina219.setCalibration_32V_1A();
   // Or to use a lower 16V, 400mA range (higher precision on volts and amps):
   //ina219.setCalibration_16V_400mA();
-
+  vTaskDelay(pdMS_TO_TICKS(1000)); //give time for other tasks to start
   Serial.print("Measuring voltage and current with INA219, id: ");
   Serial.println(id);
 
 }
 
 //maybe add inside class?
-float ReadFrom(Adafruit_INA219 ina219, int type) {
+float ReadFrom(Adafruit_INA219 *ina219, int type) {
   switch (type)
   {
     case CURRENT:
-      return ina219.getCurrent_mA();
+      return ina219->getCurrent_mA();
       break;
     case VOLTAGE:
-      return ina219.getBusVoltage_V();
+      return ina219->getBusVoltage_V();
     case POWER:
-      return ina219.getPower_mW();
+      return ina219->getPower_mW();
     default:
       Serial.println("not configured");
       return 0;
@@ -107,14 +108,8 @@ float ReadFrom(Adafruit_INA219 ina219, int type) {
 
 
 
-void data_reset(data *d, int type) {
-  d->curr = 0;
-  d->type = type;
-}
-
 void vTaskSensorRead(void *parameters) {
   //copy params
-  vTaskDelay(pdMS_TO_TICKS(1000)); //give time for other tasks to start
   Serial.println("vTaskSensorRead started");
   vTaskSensor *sensor = static_cast<vTaskSensor *>(parameters);
 
@@ -124,10 +119,10 @@ void vTaskSensorRead(void *parameters) {
 
   //modify next packet here?
   
-  /*Serial.print("Sensor ID: ");
+  /* Serial.print("Sensor ID: ");
    Serial.println(sensor->id);
    Serial.print("Time: ");
-   Serial.println(millis());*/
+   Serial.println(sensor->read_last);*/
    
    //ordered by current, voltage, power
    for (int i = 0; i < 3; ++i) {
@@ -137,10 +132,11 @@ void vTaskSensorRead(void *parameters) {
     if (d_old->curr == d_old->len) {
       data *d_new = new data;
       if ( ((packet->read_flag >> i) & 0x1) == 0x1) {//if read flag is set, request new chunk
-        if ( xQueueReceive(sensor->in_buffer,d_new, DEFAULT_TIMEOUT ) == pdFALSE) {
-          Serial.println("Something is blocking buffer queue!");
+        if ( xQueueReceive(sensor->in_buffer,d_new, portMAX_DELAY) == pdFALSE) {
+          Serial.println("Something is blocking buffer queue!, this should never be read anyways...");
         }
-        data_reset(d_new, i);
+        d_new->curr = 0;
+        d_new->type = i;
         sensor->read_to[i] = d_new;
       }
     }
@@ -153,7 +149,12 @@ void vTaskSensorRead(void *parameters) {
     //check end condition only!
     assert(d->curr != d->len);
 
-    d->dataPoints[d->curr] = random(1,1000);
+    d->dataPoints[d->curr] = ReadFrom(&sensor->ina219, d->type);
+    if (sensor->id == 0 && d->type == 0)
+      d->dataPoints[d->curr] += 5 + 2; //required offset
+
+    if (sensor->id == 0 && d->type == 2)
+      d->dataPoints[d->curr] -= 5*3.3 + 10; //required offset
     d->curr++;
 
     //add to packet, dangerous!
@@ -167,9 +168,9 @@ void vTaskSensorRead(void *parameters) {
    //send packet to UDP queue, set new packet config
    if (packet->curr >= packet->sz) {
 
-    //Serial.print("Sending packet: id = ");
-    //Serial.print(packet->id);
-    if ( xQueueSend(sensor->out_buffer, packet, DEFAULT_TIMEOUT) == pdFALSE) { //copy packet, not the pointer of packet!
+    Serial.print("Sending packet: id = ");
+    Serial.print(packet->id);
+    if ( xQueueSend(sensor->out_buffer, packet, portMAX_DELAY) == pdFALSE) { //copy packet, not the pointer of packet!
       Serial.println("something is blocking output buffer queue");
     }
   

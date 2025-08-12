@@ -1,0 +1,1776 @@
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensoGuru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead start
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensoGuru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in i2c_master_start at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/driver/i2c.c:1175 (discriminator 2)
+  #1  0x42006080 in i2cWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.c:158
+  #2  0x42003361 in TwoWire::endTransmission(bool) at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:453
+  #3  0x42026c62 in Adafruit_I2CDevice::write(unsigned char const*, unsigned int, bool, unsigned char const*, unsigned int) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_I2CDevice.cpp:161
+  #4  0x420269c5 in Adafruit_BusIO_Register::write(unsigned char*, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:122
+  #5  0x42026a9b in Adafruit_BusIO_Register::write(unsigned int, unsigned char) at .pio/libdeps/esp32-s3-devkitc-1/Adafruit BusIO/Adafruit_BusIO_Register.cpp:180
+  #6  0x420036a7 in Adafruit_INA219::getCurrent_raw() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:113
+  #7  0x42003735 in Adafruit_INA219::getCurrent_mA() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:169
+  #8  0x420028a1 in ReadFrom(Adafruit_INA219, int) at src/Sensor/sensor.cpp:97
+  #9  0x420029e9 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x400570e8  PS      : 0x00060936  A0      : 0x8200835b  A1      : 0x3fceccc0  
+A2      : 0x3fcecce0  A3      : 0x00000000  A4      : 0x00000010  A5      : 0x3fcecce0  
+A6      : 0x00060920  A7      : 0x00000001  A8      : 0x8037e79d  A9      : 0x3fcecca0  
+A10     : 0x00060923  A11     : 0x00000000  A12     : 0x00060920  A13     : 0x00060923  
+A14     : 0x00060923  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400570e5:0x3fceccc0 0x42008358:0x3fceccd0 0x42006080:0x3fcecd10 0x42003361:0x3fcecdf0 0x42026c62:0x3fcece10 0x420269c5:0x3fcece40 0x42026a9b:0x3fcece70 0x420036a7:0x3fcece90 0x42003735:0x3fcecf00 0x420028a1:0x3fcecf20 0x420029e9:0x3fcecf40
+  #0  0x42008358 in periph_ll_get_rst_en_mask at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/hal/esp32s3/include/hal/clk_gate_ll.h:151
+  #1  0x42006080 in neopixelWrite at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rgb-led.c:29
+  #2  0x42003361 in _GLOBAL__sub_I__ZN7TwoWireC2Eh at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src/Wire.cpp:698
+  #3  0x42026c62 in spiTransferBytes at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.c:1054
+  #4  0x420269c5 in spiDetachMOSI at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.c:365
+  #5  0x42026a9b in spiAttachSS at /home/donutroll/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.c:390
+  #6  0x420036a7 in WiFiClient::connected() at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiClient.cpp:548
+  #7  0x42003735 in WiFiClient::available() at /home/donutroll/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiClient.cpp:502
+  #8  0x420028a1 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:150 (discriminator 1)
+  #9  0x420029e9 in setup() at src/main.cpp:89
+
+
+
+
+
+ELF file SHA256: ada2395e003cc7a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1

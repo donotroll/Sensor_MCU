@@ -1,0 +1,267 @@
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0
+uninitialised buffer!
+uninitialised buffer!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not configured
+not configuredGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4200296b  PS      : 0x00060930  A0      : 0x00000000  A1      : 0x3fced9b0  
+  #0  0x4200296b in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:132
+
+A2      : 0x3fcec5bc  A3      : 0x00000000  A4      : 0x00000002  A5      : 0x3fcec60c  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x3fcec610  A9      : 0x3fced990  
+A10     : 0x00000000  A11     : 0xffffffff  A12     : 0x00000014  A13     : 0x00000004  
+A14     : 0x3fcedb2c  A15     : 0x80000001  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000000c  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42002968:0x3fced9b0
+  #0  0x42002968 in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:130
+
+
+
+
+
+ELF file SHA256: 4e6f0e898d535649
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42036c6a
+  #0  0x42036c6a in esp_pm_impl_waiti at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_pm/pm_impl.c:855
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+uninitialised buffer!
+Measuring voltage and current with INA219, id: 0

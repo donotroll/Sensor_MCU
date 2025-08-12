@@ -1,0 +1,179 @@
+Hello!
+Failed to find INA219 chip
+0
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+RUPnotT con figurHed
+Enot cAonfiPgured:
+ Bad head at 0x3fcec814. Expected 0xabba1234 got 0x3fce9724
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x40056f60  PS      : 0x00060f36  A0      : 0x8002e1d7  A1      : 0x3fceccd0  
+A2      : 0x3fcecce0  A3      : 0x3ff1ea24  A4      : 0x00000025  A5      : 0x3fcecce0  
+A6      : 0x33323130  A7      : 0x37363534  A8      : 0x00000000  A9      : 0x3fcecd40  
+A10     : 0x00000000  A11     : 0x0000000a  A12     : 0x00000000  A13     : 0x00000000  
+A14     : 0x00000017  A15     : 0x00000001  SAR     : 0x00000005  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000001  
+
+
+Backtrace: 0x40056f5d:0x3fceccd0 0x4002e1d4:0x3fcecce0 0x4002e70e:0x3fcecd30 0x4002e71d:0x3fcecd50 0x40381345:0x3fcecd70 0x40381029:0x3fcecea0 0x40378259:0x3fcecec0 0x40381441:0x3fcecee0 0x42024705:0x3fcecf00 0x42003659:0x3fcecf20 0x4200296e:0x3fcecf40
+  #0  0x40381345 in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:55
+  #1  0x40381029 in multi_heap_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/multi_heap_poisoning.c:259 (discriminator 1)
+  #2  0x40378259 in heap_caps_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/heap_caps.c:382
+  #3  0x40381441 in free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/heap.c:39
+  #4  0x42024705 in operator delete(void*) at /builds/idf/crosstool-NG/.build/xtensa-esp32s3-elf/src/gcc/libstdc++-v3/libsupc++/del_op.cc:49
+  #5  0x42003659 in Adafruit_INA219::~Adafruit_INA219() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:46
+  #6  0x4200296e in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: 77eb26dc4f11e529
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Failed to find INA219 chip
+0
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+
+not conf
+CORRUPT HEAP: Bad head at 0x3fcec814. Expected 0xabba1234 got 0x3fce9724
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x40056f60  PS      : 0x00060f36  A0      : 0x8002e1d7  A1      : 0x3fceccd0  
+A2      : 0x3fcecce0  A3      : 0x3ff1ea24  A4      : 0x00000025  A5      : 0x3fcecce0  
+A6      : 0x33323130  A7      : 0x37363534  A8      : 0x00000000  A9      : 0x3fcecd40  
+A10     : 0x00000000  A11     : 0x0000000a  A12     : 0x00000000  A13     : 0x00000000  
+A14     : 0x00000017  A15     : 0x00000001  SAR     : 0x00000005  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000001  
+
+
+Backtrace: 0x40056f5d:0x3fceccd0 0x4002e1d4:0x3fcecce0 0x4002e70e:0x3fcecd30 0x4002e71d:0x3fcecd50 0x40381345:0x3fcecd70 0x40381029:0x3fcecea0 0x40378259:0x3fcecec0 0x40381441:0x3fcecee0 0x42024705:0x3fcecf00 0x42003659:0x3fcecf20 0x4200296e:0x3fcecf40
+  #0  0x40381345 in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:55
+  #1  0x40381029 in multi_heap_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/multi_heap_poisoning.c:259 (discriminator 1)
+  #2  0x40378259 in heap_caps_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/heap_caps.c:382
+  #3  0x40381441 in free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/heap.c:39
+  #4  0x42024705 in operator delete(void*) at /builds/idf/crosstool-NG/.build/xtensa-esp32s3-elf/src/gcc/libstdc++-v3/libsupc++/del_op.cc:49
+  #5  0x42003659 in Adafruit_INA219::~Adafruit_INA219() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:46
+  #6  0x4200296e in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: 77eb26dc4f11e529
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Failed to find INA219 chip
+0
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+vTaskSensorRead started
+not conf
+CORRUPT HEAP: Bad head at 0x3fcec814. Expected 0xabba1234 got 0x3fce9724
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x40056f60  PS      : 0x00060f36  A0      : 0x8002e1d7  A1      : 0x3fceccd0  
+A2      : 0x3fcecce0  A3      : 0x3ff1ea24  A4      : 0x00000025  A5      : 0x3fcecce0  
+A6      : 0x33323130  A7      : 0x37363534  A8      : 0x00000000  A9      : 0x3fcecd40  
+A10     : 0x00000000  A11     : 0x0000000a  A12     : 0x00000000  A13     : 0x00000000  
+A14     : 0x00000017  A15     : 0x00000001  SAR     : 0x00000005  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000001  
+
+
+Backtrace: 0x40056f5d:0x3fceccd0 0x4002e1d4:0x3fcecce0 0x4002e70e:0x3fcecd30 0x4002e71d:0x3fcecd50 0x40381345:0x3fcecd70 0x40381029:0x3fcecea0 0x40378259:0x3fcecec0 0x40381441:0x3fcecee0 0x42024705:0x3fcecf00 0x42003659:0x3fcecf20 0x4200296e:0x3fcecf40
+  #0  0x40381345 in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:55
+  #1  0x40381029 in multi_heap_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/multi_heap_poisoning.c:259 (discriminator 1)
+  #2  0x40378259 in heap_caps_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/heap_caps.c:382
+  #3  0x40381441 in free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/heap.c:39
+  #4  0x42024705 in operator delete(void*) at /builds/idf/crosstool-NG/.build/xtensa-esp32s3-elf/src/gcc/libstdc++-v3/libsupc++/del_op.cc:49
+  #5  0x42003659 in Adafruit_INA219::~Adafruit_INA219() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:46
+  #6  0x4200296e in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: 77eb26dc4f11e529
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403778b8
+  #0  0x403778b8 in esp_restart_noos at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:151 (discriminator 1)
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Hello!
+Failed to find INA219 chip
+0
+Measuring voltage and current with INA219, id: 0
+Measuring voltage and current with INA219, id: 1
+not configured
+not configured
+CORRUPT HEAP: Bad head at 0x3fcec814. Expected 0xabba1234 got 0x3fce9724
+Guru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: Stack canary watchpoint triggered (sensor1) 
+Core  0 register dump:
+PC      : 0x40056f60  PS      : 0x00060f36  A0      : 0x8002e1d7  A1      : 0x3fceccd0  
+A2      : 0x3fcecce0  A3      : 0x3ff1ea24  A4      : 0x00000025  A5      : 0x3fcecce0  
+A6      : 0x33323130  A7      : 0x37363534  A8      : 0x00000000  A9      : 0x3fcecd40  
+A10     : 0x00000000  A11     : 0x0000000a  A12     : 0x00000000  A13     : 0x00000000  
+A14     : 0x00000017  A15     : 0x00000001  SAR     : 0x00000005  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000001  
+
+
+Backtrace: 0x40056f5d:0x3fceccd0 0x4002e1d4:0x3fcecce0 0x4002e70e:0x3fcecd30 0x4002e71d:0x3fcecd50 0x40381345:0x3fcecd70 0x40381029:0x3fcecea0 0x40378259:0x3fcecec0 0x40381441:0x3fcecee0 0x42024705:0x3fcecf00 0x42003659:0x3fcecf20 0x4200296e:0x3fcecf40
+  #0  0x40381345 in __assert_func at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/assert.c:55
+  #1  0x40381029 in multi_heap_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/multi_heap_poisoning.c:259 (discriminator 1)
+  #2  0x40378259 in heap_caps_free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/heap/heap_caps.c:382
+  #3  0x40381441 in free at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/newlib/heap.c:39
+  #4  0x42024705 in operator delete(void*) at /builds/idf/crosstool-NG/.build/xtensa-esp32s3-elf/src/gcc/libstdc++-v3/libsupc++/del_op.cc:49
+  #5  0x42003659 in Adafruit_INA219::~Adafruit_INA219() at .pio/libdeps/esp32-s3-devkitc-1/Adafruit INA219/Adafruit_INA219.cpp:46
+  #6  0x4200296e in vTaskSensorRead(void*) at src/Sensor/sensor.cpp:157
+
+
+
+
+
+ELF file SHA256: 77eb26dc4f11e529
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
